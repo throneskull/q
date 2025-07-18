@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pigeon Chat</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Splash Screen -->
+    <div class="splash-screen" id="splash">
+        <img src="logo.png" alt="Pigeon Logo" />
+    </div>
+
+    <!-- Rotating Bird -->
+    <div class="rotating-bird-wrapper">
+        <img src="bird.png" alt="Flying Bird" class="rotating-bird" />
+    </div>
+
+    <!-- Login Box -->
+    <div class="login-container" id="loginContainer">
+        <h1>Pigeon Chat.</h1>
+        <p>"From Feathers to Fiber"</p>
+
+        <button onclick="alert('Login clicked')">Login / Sign Up</button>
+        <button onclick="showGuestInput()">Continue Anonymously</button>
+
+        <div id="guestInput">
+            <input type="text" id="nickname" placeholder="Enter nickname" />
+            <p class="note">Click 'Start Chatting...' for a random username</p>
+            <button onclick="continueAsGuest()">Start Chatting...</button>
+            <div class="hide-arrow" onclick="hideGuestInput()">&#x25B2;</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
